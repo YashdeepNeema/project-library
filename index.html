@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <link href="./style.css" rel="stylesheet" />
+    <title>My Library</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 id="main-heading">My Library</h1>
+        </div>
+        <div class="cards">
+            
+        </div>
+        <div class="addButton">
+            <button type="button">Add new book</button>
+        </div>
+    </div>
+
+    <div class="addPopup" id="popup-container">
+        <div id="popup-content">
+            <form class="addPopup-form">
+                <h3>Add a book</h3>
+                <label for="title-input">
+                    Book title:<br/>
+                    <input type="text" id="title-input" placeholder="Title" />
+                </label>
+                <label for="author-input">
+                    Book author:<br/>
+                    <input type="text" id="author-input" placeholder="Author" />
+                </label>
+                <label for="pages-input">
+                    Pages:<br/>
+                    <input type="number" id="pages-input" placeholder="Number of pages" />
+                </label>
+                <label>
+                    Have you read this book?<br/>
+                    <select id="isRead">
+                        <option value='true'>Read already</option>
+                        <option value='flase'>Not yet read</option>
+                    </select>
+                </label>
+                <div class="submit-btn">
+                    <button type="submit">Add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
